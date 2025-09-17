@@ -1,0 +1,27 @@
+@import "@fontsource/roboto";
+@import "@fontsource-variable/libre-bodoni";
+
+/* Ahora las directivas de Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Resto de tus estilos personalizados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  @apply font-roboto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bodoni;
+}

@@ -1,0 +1,363 @@
+# Sistema de Joyería - .gitignore Principal
+# Este archivo contiene exclusiones globales del proyecto
+# Cada subsistema tiene su propio .gitignore específico
+
+# ============================================
+# ARCHIVOS DE CONFIGURACIÓN SENSIBLES
+# ============================================
+
+# Variables de entorno
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# Archivos de configuración con credenciales
+config/secrets.json
+config/database.json
+config/production.json
+*.key
+*.pem
+*.p12
+*.pfx
+
+# ============================================
+# ARCHIVOS DEL SISTEMA OPERATIVO
+# ============================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.lnk
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# EDITORES E IDEs
+# ============================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Atom
+.atom/
+
+# ============================================
+# LOGS Y ARCHIVOS TEMPORALES
+# ============================================
+
+# Logs generales
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+
+# Archivos de caché
+.cache/
+cache/
+*.cache
+
+# ============================================
+# DOCUMENTACIÓN Y REPORTES
+# ============================================
+
+# Documentación generada
+docs/_build/
+docs/build/
+site/
+
+# Reportes de cobertura
+coverage/
+*.lcov
+htmlcov/
+.coverage
+.coverage.*
+
+# Reportes de análisis
+reports/
+*.report
+
+# ============================================
+# ARCHIVOS DE DESARROLLO
+# ============================================
+
+# Archivos de prueba locales
+test-results/
+playwright-report/
+blob-report/
+
+# Archivos de desarrollo local
+local/
+dev/
+sandbox/
+experiments/
+
+# Notas y borradores
+NOTES.md
+TODO.md
+DRAFT.md
+*.draft
+*.notes
+
+# ============================================
+# ARCHIVOS DE DESPLIEGUE
+# ============================================
+
+# Archivos de construcción
+build/
+dist/
+out/
+target/
+
+# Archivos de Docker (si no se usan)
+# docker-compose.override.yml
+# Dockerfile.local
+
+# Archivos de Kubernetes locales
+k8s-local/
+*.local.yaml
+*.local.yml
+
+# ============================================
+# BASES DE DATOS LOCALES
+# ============================================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Archivos de base de datos de desarrollo
+local.db
+dev.db
+test.db
+
+# Dumps de base de datos
+*.sql
+*.dump
+*.backup
+
+# ============================================
+# ARCHIVOS MULTIMEDIA GRANDES
+# ============================================
+
+# Archivos de video (si no son necesarios en el repo)
+# *.mp4
+# *.avi
+# *.mov
+# *.wmv
+
+# Archivos de audio grandes
+# *.wav
+# *.flac
+# *.aiff
+
+# Archivos de imagen grandes (mantener solo las necesarias)
+# *.psd
+# *.ai
+# *.sketch
+
+# ============================================
+# ARCHIVOS DE DEPENDENCIAS
+# ============================================
+
+# Node.js (manejado por .gitignore específicos)
+# node_modules/
+# package-lock.json
+
+# Python (manejado por .gitignore específicos)
+# __pycache__/
+# *.pyc
+# venv/
+
+# ============================================
+# ARCHIVOS DE MONITOREO Y ANÁLISIS
+# ============================================
+
+# Archivos de profiling
+*.prof
+*.profile
+
+# Archivos de benchmark
+benchmark-results/
+*.benchmark
+
+# Archivos de métricas
+metrics/
+*.metrics
+
+# ============================================
+# ARCHIVOS DE SEGURIDAD
+# ============================================
+
+# Certificados y llaves
+*.crt
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Archivos de autenticación
+auth.json
+credentials.json
+service-account.json
+
+# Tokens y secretos
+*.token
+*.secret
+
+# ============================================
+# ARCHIVOS DE CONFIGURACIÓN LOCAL
+# ============================================
+
+# Configuraciones locales del proyecto
+config.local.json
+settings.local.json
+local.config.js
+
+# Archivos de override
+*.override.*
+*.local.*
+
+# ============================================
+# ARCHIVOS DE RESPALDO
+# ============================================
+
+# Respaldos automáticos
+*.backup
+*.bak
+*.old
+*.orig
+
+# Archivos de versiones anteriores
+*.v1
+*.v2
+*.previous
+
+# ============================================
+# ARCHIVOS ESPECÍFICOS DEL PROYECTO
+# ============================================
+
+# Archivos de migración temporal
+migrations/temp/
+*.migration.temp
+
+# Archivos de seeds de desarrollo
+seeds/dev/
+seeds/local/
+
+# Archivos de fixtures temporales
+fixtures/temp/
+*.fixture.temp
+
+# ============================================
+# DIRECTORIOS DE TRABAJO TEMPORAL
+# ============================================
+
+# Directorios de trabajo
+workspace/
+temp/
+tmp/
+scratch/
+
+# Directorios de uploads temporales
+uploads/temp/
+uploads/tmp/
+
+# ============================================
+# ARCHIVOS DE HERRAMIENTAS DE DESARROLLO
+# ============================================
+
+# Archivos de Prettier
+.prettierignore
+
+# Archivos de ESLint
+.eslintcache
+
+# Archivos de Stylelint
+.stylelintcache
+
+# Archivos de Husky
+.husky/_
+
+# ============================================
+# NOTA IMPORTANTE
+# ============================================
+# 
+# Este .gitignore contiene exclusiones globales.
+# Cada subsistema tiene su propio .gitignore:
+# 
+# - Backend/.gitignore (Django/Python específico)
+# - Frontend/admin/.gitignore (React/Node específico)
+# - Frontend/joyeria/.gitignore (React/Node específico)
+# 
+# Si necesitas agregar exclusiones específicas de un
+# subsistema, hazlo en el .gitignore correspondiente.
+# ============================================
