@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import ProductForm from "./ProductForm";
 import AnilloForm from "./AnilloForm";
 import AreteForm from "./AreteForm";
@@ -8,12 +8,8 @@ import DijeForm from "./DijeForm";
 import PircingForm from "./PircingForm";
 import TobilleraForm from "./TobilleraForm";
 
-export default function ProductModal({
-  isOpen,
-  onClose,
-  type = "create",
-  initialData = {},
-  productType = "anillos",
+// eslint-disable-next-line react/prop-types
+export default function ProductModal({ isOpen,onClose,type = "create",initialData = {},productType = "anillos",
 }) {
   if (!isOpen) return null;
 

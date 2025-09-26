@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// eslint-disable-next-line react/prop-types
 export default function PircingForm({ type = "create", initialData = {} }) {
   const [formData, setFormData] = useState({
     name: initialData.name || "",

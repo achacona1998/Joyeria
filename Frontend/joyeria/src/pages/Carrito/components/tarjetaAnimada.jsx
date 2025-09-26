@@ -1,4 +1,5 @@
-// eslint-disable-next-line react/prop-types
+import PropTypes from "prop-types";
+
 export const TarjetaAnimada = ({ Color, Data, expe }) => {
   return (
     <div
@@ -27,4 +28,17 @@ export const TarjetaAnimada = ({ Color, Data, expe }) => {
       </div>
     </div>
   );
+};
+
+TarjetaAnimada.propTypes = {
+  Color: PropTypes.shape({
+    container: PropTypes.string,
+    numbers: PropTypes.string
+  }),
+  Data: PropTypes.shape({
+    tarjeta: PropTypes.string,
+    nombre: PropTypes.string,
+    apellidos: PropTypes.string
+  }),
+  expe: PropTypes.string
 };

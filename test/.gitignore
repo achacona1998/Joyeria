@@ -1,0 +1,43 @@
+# General test artifacts
+*.log
+*.tmp
+*.temp
+
+# Cache directories
+__pycache__/
+.cache/
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+.nyc_output
+
+# Test reports
+test-results/
+test-report/
+allure-results/
+allure-report/
+
+# Environment files
+.env
+.env.local
+.env.test
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

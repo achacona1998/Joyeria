@@ -3,12 +3,32 @@ import { Items } from "../components/items";
 import useCounts from "../../../hooks/count";
 
 export const Contenido = () => {
+  // Llamar hooks en el nivel superior
+  const anilloCount = useCounts("anillo").count;
+  const areteCount = useCounts("arete").count;
+  const cadenaCount = useCounts("cadena").count;
+  const brazaleteCount = useCounts("brazalete").count;
+  const tobilleraCount = useCounts("tobillera").count;
+  const pircingCount = useCounts("pircing").count;
+  const dijeCount = useCounts("dije").count;
+
+  // Mapear los conteos a los elementos
+  const countsMap = {
+    "anillo": anilloCount,
+    "arete": areteCount,
+    "cadena": cadenaCount,
+    "brazalete": brazaleteCount,
+    "tobillera": tobilleraCount,
+    "pircing": pircingCount,
+    "dije": dijeCount
+  };
+
   // Preparar una lista para almacenar los datos de conteo
   const itemsConCount = Items.map((item) => {
     const joyaSinS = item.name.slice(0, -1).toLowerCase();
     return {
       ...item,
-      count: useCounts(joyaSinS).count, // Llamada directa al hook por cada elemento
+      count: countsMap[joyaSinS] || 0,
     };
   });
 

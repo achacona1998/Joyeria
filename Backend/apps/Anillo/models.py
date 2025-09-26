@@ -40,5 +40,4 @@ class Anillo(Mercancia):
         upload_to=anillo_photo_directory, default='imgExample.jpg')
 
     def __str__(self):
-        txt = "Nombre: {0} | Precio: {1} | Pureza: {2} | Size: {3} | Peso: {4}| Lugar: {5} | Cantidad: {6} | Tipo: {7}"
-        return txt.format(self.name, self.precio_unidad, self.pureza, self.size, self.peso_neto, self.lugar_de_uso, self.cantidad, self.tipo_anillo)
+        return self.name

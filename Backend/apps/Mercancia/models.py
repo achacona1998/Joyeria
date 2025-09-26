@@ -16,7 +16,7 @@ class Mercancia(models.Model):
     peso_neto = models.CharField(validators=[
                                  validate_comma_separated_integer_list], max_length=200, blank=True, null=True, default='0')
 
-    es_publico = models.BooleanField(max_length=8, default=False)
+    es_publico = models.BooleanField(max_length=8, default=True)
 
     GENERO = [
         ('unisex', 'Unisex'),
