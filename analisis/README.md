@@ -6,7 +6,11 @@ https://github.com/users/achacona1998/projects/13
 
 ## Ver Pantallas de Tienda
 
+https://github.com/achacona1998/Joyeria/tree/main/analisis/Dise%C3%B1o/Tienda
+
 ## Ver Pantallas de Administracion
+
+https://github.com/achacona1998/Joyeria/tree/main/analisis/Dise%C3%B1o/Admin
 
 ## Introducción
 
